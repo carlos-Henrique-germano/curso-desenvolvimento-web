@@ -1,0 +1,148 @@
+/*
+Seletor Universal
+/*
+*{
+	border: 1px solid red;
+}
+*/
+/* Seletor de texto */
+/*
+h1 {
+	color: green;
+}
+*/
+/* Seletor de classe */
+/*
+.brown {
+	color: brown;
+}
+p.brown {
+	color: brown;
+}
+*/
+/* Seletor de id */
+/*
+#header {
+	border: 1px solid blue;
+}
+*/
+/* Seletor de filho => usa o símbolo pai>filho e seleciona o elemento IMEDIATAMENTE filho de outro */
+/*
+li>a {
+	color: red;
+	text-decoration: none;
+}
+li>span {
+	color: cyan;
+	text-decoration: overline;
+	font-size: 2.5em;
+}
+*/
+/* Seletor de descendente => Elemento descendente de outro especificado e não necessariamente filho de outro */
+/*
+p a {
+	color: green;
+}
+*/
+/* Seletor de irmão adjacente => Seleciona o primeiro elemento depois de qualquer elemento (mas, sem selecionar os outros) */
+/*
+h1 + p {
+	color: darkorange;
+	font-size: 32px;
+}
+*/
+/* Seletor de irmão geral => Seleciona todos os irmãos (elementos depois de qualquer elemento), SOMENTE APÓS */
+/*
+h3~p {
+	color: hotpink;
+	font-size: 24px;
+}
+*/
+
+/* HERANÇA E ESPECIFICIDADE */
+
+/*
+* {
+	border: 1px solid blue;
+}
+*/
+
+/*
+body {
+	color: red;
+}
+*/
+
+/*
+p {
+	color: blue;
+}
+*/
+
+/*
+p {
+	color: green;
+}
+*/
+
+/*
+#page p {
+	color: green !important;
+}
+*/
+
+/*
+#page p {
+	color: blue;
+}
+*/
+
+/* Se um seletor for mais específico que outro, a regra mais específica será aplicada (terá precedência sobre regras mais gerais) */
+
+/*
+* {
+	color: blue;	
+}
+*/
+
+/*
+h2 {
+	color: violet;
+}
+*/
+
+/*
+h2.green {
+	color: green;
+}
+*/
+
+/*
+h2#yellow {
+	color: yellow;
+}
+*/
+
+
+/*BARRA DE NAVEGAÇÃO VERTICAL*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	background: url("../images/menu.png") no-repeat left bottom;
+	text-decoration: none;
+	text-indent: 30px;
+	line-height: 40px;
+}
+
+a:hover {
+	background-position: right bottom;
+}

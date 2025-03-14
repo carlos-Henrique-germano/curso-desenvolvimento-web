@@ -1,0 +1,128 @@
+body{
+	background-image: url('images/background.png');
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+#main{
+	width: 900px;
+}
+
+#menu{
+	background: #c5c5d2;
+	padding: 18px;
+}
+
+#content{
+	background: #e8e8d9;
+	padding: 10px;
+}
+
+a{
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.centralize{
+	text-align: center;
+}
+
+h1{
+	color: #828271;
+	font-size: 1.2em;
+}
+
+.advertising-img{
+	border: 10px solid #c3c3ae;
+}
+
+/* PELO CHAT GPT
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1d2330;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2b2b2b;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #444;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(200, 200, 200, 0.8);
+    font-size: 14px;
+    color: #222;
+}
+
+
+*/
