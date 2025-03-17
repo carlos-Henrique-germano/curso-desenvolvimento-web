@@ -137,12 +137,22 @@ ul a {
 	height: 40px;
 	display: block;
 	color: #000;
-	background: url("../images/menu.png") no-repeat left bottom;
+	background: #f7b600 url("../images/menu.png") no-repeat left bottom;
 	text-decoration: none;
 	text-indent: 30px;
 	line-height: 40px;
 }
 
-a:hover {
+a:hover, .selected a {
 	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#html5 #vert-nav-bar .html5 a, 
+#css3-basic #vert-nav-bar .css3-basic a,
+#css3-intermediate #vert-nav-bar .css3-intermediate a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
 }
