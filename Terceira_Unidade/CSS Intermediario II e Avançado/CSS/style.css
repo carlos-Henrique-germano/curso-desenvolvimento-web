@@ -208,7 +208,7 @@ ul a:hover {
 }
 
 BARRA DE NAVEGAÇÃO COM ABAS
-*/
+
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -244,4 +244,86 @@ ul #actual {
 
 ul #actual a {
 	background: url("../images/aba-esquerda-atual.png") no-repeat top left;
+}
+
+LAYOUTS
+*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+ul a:hover {
+	color: #fff;
+}
+
+a {
+	color: #000000;
+}
+
+#container {
+	width: 720px;
+	margin: 0 auto; /*CENTRALIZA UMA DIV*/
+	background: #fff;
+}
+
+#marca {
+	height: 100px;
+	background: #9E9E9E;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 520px;
+	float: right;
+}
+
+#main-content {
+	width: 320px;
+	float: left;
+}
+
+#secondary-content {
+	width: 180px;
+	float: right;
+	background: #d1d1d1;
+}
+
+#secondary-content h1,
+#secondary-content h2,
+#secondary-content h3,
+#secondary-content p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+	text-align: center;
+	height: 255px;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+	text-align: center;
 }
