@@ -275,12 +275,17 @@ a {
 }
 
 #container {
-	width: 720px;
+	width: 100%; /*720px*/
 	margin: 0 auto; /*CENTRALIZA UMA DIV*/
 	background: #fff;
+	min-width: 720px;
+	max-width: 960px;
+	/*min-height: 240px;
+	max-height: 400;*/
 }
 
 #marca {
+	width: 100%;
 	height: 100px;
 	background: #9E9E9E;
 	text-align: center;
@@ -288,17 +293,17 @@ a {
 }
 
 #conteudo {
-	width: 520px;
+	width: 70%; /*520px*/
 	float: right;
 }
 
 #main-content {
-	width: 320px;
+	width: 64%; /*320px*/
 	float: left;
 }
 
 #secondary-content {
-	width: 180px;
+	width: 30%; /*180px*/
 	float: right;
 	background: #d1d1d1;
 }
@@ -312,7 +317,7 @@ a {
 }
 
 #navegacao {
-	width: 180px;
+	width: 26%; /*180px*/
 	float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;

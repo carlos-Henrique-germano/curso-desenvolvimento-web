@@ -1,38 +1,22 @@
-# Guia Didático de Seletores e Layouts CSS
-
-Este guia apresenta diversos seletores e conceitos de CSS comentados, com explicações sobre seu funcionamento.
+# Guia de Estudo CSS
 
 ## Seletores CSS
 
-### 1. \*\*Seletor Universal (`*`)
-
-\*\*
-O seletor universal aplica um estilo a todos os elementos da página.
-
+### Seletor Universal
 ```css
 * {
     border: 1px solid red;
 }
 ```
 
----
-
-### 2. **Seletor de Texto**
-
-O seletor de texto estiliza elementos HTML pelo nome da tag.
-
+### Seletor de Texto
 ```css
 h1 {
     color: green;
 }
 ```
 
----
-
-### 3. **Seletor de Classe**
-
-Define um estilo para todos os elementos que possuem a classe especificada.
-
+### Seletor de Classe
 ```css
 .brown {
     color: brown;
@@ -43,49 +27,34 @@ p.brown {
 }
 ```
 
----
-
-### 4. **Seletor de ID**
-
-Define um estilo específico para um elemento identificado por um `id`.
-
+### Seletor de ID
 ```css
 #header {
     border: 1px solid blue;
 }
 ```
 
----
-
-### 5. **Seletor de Filho (****`>`****)**
-
-Aplica estilos apenas aos elementos que são filhos diretos de outro.
-
+### Seletor de Filho (`>`)
 ```css
 li > a {
     color: red;
     text-decoration: none;
 }
+li > span {
+    color: cyan;
+    text-decoration: overline;
+    font-size: 2.5em;
+}
 ```
 
----
-
-### 6. **Seletor de Descendente (espaço)**
-
-Afeta qualquer elemento dentro de outro, independentemente da hierarquia direta.
-
+### Seletor de Descendente
 ```css
 p a {
     color: green;
 }
 ```
 
----
-
-### 7. **Seletor de Irmão Adjacente (****`+`****)**
-
-Aplica estilo ao primeiro elemento que aparece logo após outro elemento.
-
+### Seletor de Irmão Adjacente (`+`)
 ```css
 h1 + p {
     color: darkorange;
@@ -93,12 +62,7 @@ h1 + p {
 }
 ```
 
----
-
-### 8. **Seletor de Irmão Geral (****`~`****)**
-
-Seleciona todos os elementos que são "irmãos" do elemento anterior.
-
+### Seletor de Irmão Geral (`~`)
 ```css
 h3 ~ p {
     color: hotpink;
@@ -106,12 +70,7 @@ h3 ~ p {
 }
 ```
 
----
-
-## Herança e Especificidade CSS
-
-Quando regras se sobrepõem, a mais específica tem precedência.
-
+## Herança e Especificidade
 ```css
 body {
     color: red;
@@ -128,35 +87,24 @@ p {
 #page p {
     color: green !important;
 }
+
+#page p {
+    color: blue;
+}
 ```
 
----
+## Barras de Navegação
 
-## Barra de Navegação Vertical
-
+### Barra de Navegação Vertical
 ```css
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-ul a {
-    width: 200px;
-    height: 40px;
-    display: block;
-    color: #000;
-    background: #f7b600 url("../images/menu.png") no-repeat left bottom;
-    text-decoration: none;
-    text-indent: 30px;
-    line-height: 40px;
-}
 ```
 
----
-
-## Barra de Navegação Horizontal
-
+### Barra de Navegação Horizontal
 ```css
 ul {
     margin: 0;
@@ -168,33 +116,48 @@ ul {
 }
 ```
 
----
+## Layouts em CSS
 
-## Layouts e Estruturação CSS
-
+### Layout Fixo
 ```css
 #container {
     width: 720px;
     margin: 0 auto;
     background: #fff;
 }
+```
 
-#conteudo {
-    width: 520px;
-    float: right;
+### Layout Líquido
+```css
+body {
+    font-family: Arial, sans-serif;
 }
 
-#navegacao {
-    width: 180px;
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#conteudo {
+    width: 70%;
     float: left;
+}
+
+#sidebar {
+    width: 25%;
+    float: right;
     background: #d1d1d1;
+    padding: 10px;
 }
 
 #rodape {
     clear: both;
     background: #c4c4c4;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 ```
 
+Esse layout líquido usa porcentagens para adaptar a largura dos elementos ao tamanho da tela, tornando a página mais responsiva.
